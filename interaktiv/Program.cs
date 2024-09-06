@@ -1,24 +1,28 @@
-﻿string name = Console.ReadLine();
-string Vx = Console.ReadLine(); 
-
+﻿
 Console.WriteLine("Vilken väg vill du ta höger eller vänster");
 
-if (name.ToLower() == "Vänster");
+string ans1 = Console.ReadLine().ToLower();
 
-//if (name == "janan") || name == "Janan"; 
+if (ans1 == "vänster")
 {
-Console.WriteLine("Okej vänster alltså");
+    Console.WriteLine("Okej vänster alltså");
+    Console.WriteLine("Det börjar bli en sandstorm men du fortsätter ändå");
 }
 
-else if (name.ToLower() == "Höger");
+else if (ans1 == "höger")
 {
-    Console.WriteLine("Okej höger alltså"); 
-    Console.WriteLine("Du ser en kaktus, och du är väldigt törstig vill du dricka vattnet i den eller fortsätta gå") 
+    Console.WriteLine("Okej höger alltså");
+    Console.WriteLine("Du ser en kaktus, och du är väldigt törstig vill du dricka vattnet i den eller fortsätta gå (Dricka/Gå) ");
+    string Vx = Console.ReadLine().ToLower();
+    if (Vx == "dricka")
+    {
+        Console.WriteLine("du dog");
+    }
+    else if (Vx.ToLower() == "gå")
+    {
+        Console.WriteLine("Du hitta en väg tillbaka hem!");
+
+    }
 }
 
-else if vx.ToLower() == "Dricka";
-if (Vx.ToLower() == "Dricka");
-{
-    Console.WriteLine(" du dog" );
-}
 Console.ReadLine();
