@@ -1,12 +1,23 @@
 ﻿
-Console.WriteLine("Vilken väg vill du ta höger eller vänster");
+Console.WriteLine("Du är i en öken med två olika vägar, Vilken väg vill du ta höger eller vänster");
 
 string ans1 = Console.ReadLine().ToLower();
 
 if (ans1 == "vänster")
 {
     Console.WriteLine("Okej vänster alltså");
-    Console.WriteLine("Det börjar bli en sandstorm men du fortsätter ändå");
+    Console.WriteLine("Det börjar bli en sandstorm vill du Fortsätta eller vänta ut stormen (Fortsätt/vänta)");
+    String ss = Console.ReadLine().ToLower();
+    if (ss.ToLower() == "förtsätt")
+    {
+        Console.WriteLine("Du kom tillbaka hem");
+    }
+    
+    else if (ss.ToLower() == "vänta")
+    {
+        Console.WriteLine("Du fick san i ögonon och tappa synen och hitta aldrig hem igen");
+
+    }
 }
 
 else if (ans1 == "höger")
@@ -23,6 +34,10 @@ else if (ans1 == "höger")
         Console.WriteLine("Du hitta en väg tillbaka hem!");
 
     }
+}
+else 
+{
+
 }
 
 Console.ReadLine();
