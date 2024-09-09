@@ -10,7 +10,7 @@ if (ans1 == "vänster")
     String ss = Console.ReadLine().ToLower();
     if (ss.ToLower() == "förtsätt")
     {
-        Console.WriteLine("Du kom tillbaka hem");
+        Condsole.WriteLine("Du kom tillbaka hem");
     }
     
     else if (ss.ToLower() == "vänta")
